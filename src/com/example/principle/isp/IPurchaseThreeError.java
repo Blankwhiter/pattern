@@ -5,7 +5,7 @@ package com.example.principle.isp;
  */
 public interface IPurchaseThreeError {
     /**
-     * 购买
+     * 购买电脑
      */
     void buyComputer();
 

@@ -1,13 +1,11 @@
 package com.example.principle;
 
-import com.example.principle.crp.DellComputerFourError;
-import com.example.principle.crp.DellComputerThree;
-import com.example.principle.crp.DellComputerThreeError;
-import com.example.principle.crp.Windows;
+import com.example.principle.crp.*;
 import com.example.principle.dip.LenovoComputer;
 import com.example.principle.dip.PurchaserOne;
 import com.example.principle.dip.PurchaserError;
 import com.example.principle.isp.PurchaseThree;
+import com.example.principle.isp.PurchaseThreeError;
 import com.example.principle.lkp.Manager;
 import com.example.principle.lkp.ManagerError;
 import com.example.principle.lkp.PurchaseFour;
@@ -19,6 +17,7 @@ import com.example.principle.ocp.DellDiscountComputer;
 import com.example.principle.ocp.DellDiscountComputerError;
 import com.example.principle.srp.DellComputerTwo;
 import com.example.principle.srp.PurchaseTwo;
+import com.example.principle.srp.PurchaseTwoError;
 
 /**
  * 原则测试类
@@ -69,7 +68,7 @@ public class PrincipleTest {
         PurchaserOne purchaser = new PurchaserOne();
         purchaser.setComputer(dellComputer);
         System.out.println("采购人员 咨询：戴尔价钱="+purchaser.inquiryComputerPrice());
-        purchaser.setComputer(dellComputer);
+        purchaser.setComputer(lenovoComputer);
         System.out.println("采购人员 咨询：联想价钱="+purchaser.inquiryComputerPrice());
     }
 
@@ -78,6 +77,11 @@ public class PrincipleTest {
      */
     public static void testSRP(){
         DellComputerTwo dellComputerTwo = new DellComputerTwo(3, "戴尔e340", "windows 10", 5500D);
+        PurchaseTwoError purchaseTwoError = new PurchaseTwoError();
+        purchaseTwoError.setComputer(dellComputerTwo);
+        purchaseTwoError.buyComputer();
+        purchaseTwoError.setupComputer();
+
         PurchaseTwo purchaseTwo = new PurchaseTwo();
         purchaseTwo.setComputer(dellComputerTwo);
         purchaseTwo.buyComputer();
@@ -89,6 +93,14 @@ public class PrincipleTest {
      */
     public static void testISP(){
         DellComputerTwo dellComputerTwo = new DellComputerTwo(3, "戴尔e340", "windows 10", 5500D);
+        PurchaseThreeError purchaseThreeError = new PurchaseThreeError();
+        purchaseThreeError.setComputer(dellComputerTwo);
+        purchaseThreeError.buyComputer();
+        purchaseThreeError.contactShop();
+        purchaseThreeError.printInvoice();
+        purchaseThreeError.setupComputer();
+        purchaseThreeError.linkPrinter();
+
         PurchaseThree purchaseThree = new PurchaseThree();
         purchaseThree.setComputer(dellComputerTwo);
         purchaseThree.buyComputer();
@@ -155,6 +167,9 @@ public class PrincipleTest {
         //通过组合的方式，可以减少
         DellComputerThree dellComputerThree = new DellComputerThree();
         dellComputerThree.setOperationSystem(new Windows());
+        dellComputerThree.power();
+
+        dellComputerThree.setOperationSystem(new Linux());
         dellComputerThree.power();
     }
 }

@@ -1,20 +1,13 @@
-package com.example.principle.lkp;
+package com.example.principle.isp;
 
-import com.example.principle.isp.IPurchaseThree;
 import com.example.principle.srp.IComputerTwo;
 
 /**
- * 采购人员对接店家 询问剩余电脑数量
+ * 错误示范： 采购人员，假设公司 还未明确分工 采购电脑以及安装系统都交予采购人员
  */
-public class PurchaseFour implements IPurchaseThree {
+public class PurchaseThreeError implements IPurchaseThreeError{
 
     private IComputerTwo computer;
-    //这里的shop也应该面对接口编程，而不是具体实例，但此例只为演示迪米特法则
-    private Shop shop;
-
-    public void setShop(Shop shop) {
-        this.shop = shop;
-    }
 
     public void setComputer(IComputerTwo computer) {
         this.computer = computer;
@@ -34,9 +27,13 @@ public class PurchaseFour implements IPurchaseThree {
         System.out.println("联系了"+computer.getName()+"的店家");
     }
 
-    //模拟店家回答
-    public void inquiryRest(){
-        shop.rest();
+    @Override
+    public void setupComputer() {
+        System.out.println("安装了"+computer.getSystem());
     }
 
+    @Override
+    public void linkPrinter() {
+        System.out.println("连上了公司的打印机");
+    }
 }

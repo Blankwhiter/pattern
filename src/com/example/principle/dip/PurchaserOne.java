@@ -3,7 +3,7 @@ package com.example.principle.dip;
 import com.example.principle.ocp.IComputer;
 
 /**
- * 采购人员
+ * 采购人员1号
  */
 public class PurchaserOne {
 

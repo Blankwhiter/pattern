@@ -1,9 +1,9 @@
 package com.example.principle.srp;
 
 /**
- * 采购人员.公司有意再招收后勤人员来指定安装系统等工作。但是人还没来，故现在采购电脑以及安装系统还是都交予采购人员
+ * 错误示范： 采购人员，假设公司 还未明确分工 采购电脑以及安装系统都交予采购人员
  */
-public class PurchaseTwo implements IPurchase,ISupport{
+public class PurchaseTwoError implements IPurchaseError{
 
     private IComputerTwo computer;
 

@@ -1,6 +1,5 @@
 package com.example.principle.srp;
 
-import com.example.principle.ocp.IComputer;
 
 /**
  * 戴尔电脑

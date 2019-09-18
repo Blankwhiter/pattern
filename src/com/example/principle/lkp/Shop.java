@@ -1,5 +1,8 @@
 package com.example.principle.lkp;
 
+/**
+ * 店铺
+ */
 public class Shop {
 
     /**
