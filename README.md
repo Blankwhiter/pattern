@@ -970,9 +970,12 @@
 
 1.单例模式
 1.1 定义及相关定义对比
+
 ![单例模式](https://img-blog.csdnimg.cn/20190930094357143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
+
 1.2 UML类图
+
 ![单例UML类图](https://img-blog.csdnimg.cn/20190930085647193.png)
 
 1.3 实现
@@ -1164,7 +1167,9 @@ public class MultiSingleton {
 
 
 2.工厂模式
+
 2.1 工厂方法模式
+
 2.1.1 定义及相关定义对比
 ![工厂方法模式](https://img-blog.csdnimg.cn/20190930104732245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
