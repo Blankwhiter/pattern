@@ -968,7 +968,8 @@
 </pre>
 
 
-1.单例模式
+#1.单例模式
+
 1.1 定义及相关定义对比
 
 ![单例模式](https://img-blog.csdnimg.cn/20190930094357143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
@@ -1166,14 +1167,16 @@ public class MultiSingleton {
 
 
 
-2.工厂模式
+# 2.工厂模式
 
 2.1 工厂方法模式
 
 2.1.1 定义及相关定义对比
+
 ![工厂方法模式](https://img-blog.csdnimg.cn/20190930104732245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 2.1.2 UML类图
+
 ![工厂方法UML类图](https://img-blog.csdnimg.cn/20190930104815340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 2.1.3 实现
@@ -1261,9 +1264,13 @@ public class ConcreteDrinkFactory implements DrinkFactory {
 
 
 2.2 抽象工厂模式
+
 2.2.1 定义及相关定义对比
+
 ![抽象工厂模式](https://img-blog.csdnimg.cn/20190930111426893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
 2.2.2 UML类图
+
 ![抽象工厂UML类图](https://img-blog.csdnimg.cn/20190930111441842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 
@@ -1350,11 +1357,14 @@ public class ConcreteWesternFactory implements WesternFactory {
 ```
 
 
-3.原型模式
+#3.原型模式
+
 3.1 定义及相关定义对比
+
 ![原型模式](https://img-blog.csdnimg.cn/20190930115524151.png)
 
 3.2 UML类图
+
 ![原型UML类图](https://img-blog.csdnimg.cn/20190930115546558.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 3.3 实现
@@ -1493,11 +1503,14 @@ public class DeepClone implements Serializable {
 ```
 
 
-4.建造者模式
+# 4.建造者模式
+
 4.1 定义及相关定义对比
+
 ![建造者模式](https://img-blog.csdnimg.cn/20190930142138309.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 4.2 UML类图
+
 ![建造者UML类图](https://img-blog.csdnimg.cn/20190930141447493.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
 4.3 实现
