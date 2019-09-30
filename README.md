@@ -10,11 +10,11 @@
    - [x] 5.迪米特法则
    - [x] 6.里氏替换原则
    - [x] 7.合成复用原则
-- [ ] 创建型
-	- [ ] 单例模式
-	- [ ] 工厂模式
-	- [ ] 原型模式
-	- [ ] 建造者模式
+- [x] 创建型
+	- [x] 单例模式
+	- [x] 工厂模式
+	- [x] 原型模式
+	- [x] 建造者模式
 - [ ] 结构型
 	- [ ] 代理模式
 	- [ ] 适配器模式
@@ -40,7 +40,7 @@
 
  
 写在前面：
-# <span id='uml'>UML图解</span> 
+#  UML图解 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190912140838301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
 
@@ -75,7 +75,7 @@
             物件： 戴尔电脑（windows|linux），联想电脑（windows|linux）
 ### 一、开闭原则
 ![开闭原则](https://img-blog.csdnimg.cn/20190918170004662.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例1： 
+  #### 示例1：店铺电脑，打折促销 
   某一电脑店铺中摆放着些许电脑，这些电脑都能看到名称跟价钱。
   1.定义一个电脑的接口
   ```java
@@ -287,7 +287,7 @@
 
 ###  二、依赖倒置原则
 ![依赖倒置原则](https://img-blog.csdnimg.cn/20190918170046853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例2：
+  #### 示例2：采购电脑，进行筛选
   这一天 经公司上层决定，让采购人员再采购一批联想电脑或者戴尔电脑。采购人员刚好人就在该电脑店铺中。这时候她直接拿起了一台戴尔电脑标签看了下价格，但没有放下。紧接着走到一台联想电脑旁边又拿起来这台标签价格。  
   1.定义一个联想电脑。（戴尔电脑参考DellComputer类）  
    ```java
@@ -407,7 +407,7 @@
    
 ###  三、单一职责原则
 ![单一职责原则](https://img-blog.csdnimg.cn/20190918170144804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例3：
+  #### 示例3：员工抱怨，工作太多
   经过商量协商，终于从店家买回来一批戴尔电脑回来，但是还需要将这些电脑安装上公司指定地系统镜像。但采购人员想了想：怎么我买回来，还要负责安装。没办法能者多劳呗！  
   1.定义采购人员购买电脑和安装系统的接口  
   ```java
@@ -509,7 +509,7 @@
   
 ### 四、接口隔离原则  
 ![接口隔离原则](https://img-blog.csdnimg.cn/20190918170309777.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例4： 
+  #### 示例4： 不在其位，不谋其政
   又到了每个季度召开一次员工大会，领导者 听取手下员工建议的时候到了。  
   这时候，采购人员终于有机会把自己的想法表达出来给领导：您好，总经理！ 我是采购人员三号。我现在的职责有购买电脑，打印发票，联系商家，安装电脑，连接公司打印机....我觉得我的职责不应该这么分配，我应该做好自己分内的事，而不是承担这么多工作！  
   1.定义一个采购人员的职责接口  
@@ -689,7 +689,7 @@
   
 ### 五、迪米特法则
 ![迪米特法则](https://img-blog.csdnimg.cn/20190918170346591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例5： 
+  #### 示例5： 物资紧缺，咨询订购
   过完春节后的一个月，发现公司又招收了好多新来的人员，发现电脑不够。这时候采购部部长需要再定一批电脑回来，于是想问问当初那家电脑店铺还有多少电脑？    
   1.定义店铺  
   ```java
@@ -786,7 +786,7 @@
 
 ###  六、里氏替换原则
 ![里氏替换原则](https://img-blog.csdnimg.cn/20190918170421778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例6： 
+  #### 示例6： 一人量大，招人帮忙
   近期，采购部长发现采购员工4号的工作量很大，其他采购员工也无法分担，所以又招收了一名采购人员5号。  
   采购5号刚来，所以采购部长让采购4号带带她，并吩咐让联系店家的职责给采购人员4号负责。  
   但是采购人员4号很忙，就只告诉了采购人员5号那家店名等信息，而采购人员5号并不熟悉原先联系的情况。  
@@ -846,7 +846,7 @@
 
 ###  七、合成复用原则
 ![合成复用原则](https://img-blog.csdnimg.cn/20190918170454614.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
-  #### 示例7： 
+  #### 示例7：  安装测试，合理利用
   由于公司不同岗位，需要电脑的操作系统不尽相同（假设有windows和linux）。  
   但最近根据信息安全的要求，更新了新版的镜像（操作系统安装软件），需要空出电脑来测试安装新的版本。  
   1.定义一个启动电脑的接口  
@@ -957,10 +957,740 @@
 *principle目录下是七大设计原则实践*
 
 ### 一、创建型
+写在前面：
+为什么需要创建型模式？
+<pre>
+首先，在编程中，对象的创建通常是一件比较复杂的事，因为，为了达到降低耦合的目的，我们通常采用面向抽象编程的方式，对象间的关系不会硬编码到类中，而是等到调用的时候再进行组装，这样虽然降低了对象间的耦合，提高了对象复用的可能，但在一定程度上将组装类的任务都交给了最终调用的客户端程序，大大增加了客户端程序的复杂度。采用创建类模式的优点之一就是将组装对象的过程封装到一个单独的类中，这样，既不会增加对象间的耦合，又可以最大限度的减小客户端的负担。
+
+其次，使用普通的方式创建对象，一般都是返回一个具体的对象，即所谓的面向实现编程，这与设计模式原则是相违背的。采用创建类模式则可以实现面向抽象编程。客户端要求的只是一个抽象的类型，具体返回什么样的对象，由创建者来决定。
+
+再次，可以对创建对象的过程进行优化，客户端关注的只是得到对象，对对象的创建过程则不关心，因此，创建者可以对创建的过程进行优化，例如在特定条件下，如果使用单例模式或者是使用原型模式，都可以优化系统的性能。
+</pre>
+
+
 1.单例模式
+1.1 定义及相关定义对比
+![单例模式](https://img-blog.csdnimg.cn/20190930094357143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+1.2 UML类图
+![单例UML类图](https://img-blog.csdnimg.cn/20190930085647193.png)
+
+1.3 实现
+1.3.1 饿汉模式
+```java
+/**
+ * 单例模式 饿汉模式:类初始化的时候，会立即加载该对象，线程天生安全，调用效率高。
+ */
+public class SingletonHunger {
+    /**
+     * 1.将构造函数私有化，不允许外部直接创建对象
+     */
+    private SingletonHunger() {
+    }
+
+    /**
+     * 2.创建类的唯一私有实例,一旦加载类就进行初始化实例
+     */
+    private static final SingletonHunger instance = new SingletonHunger();
+
+    /**
+     * 3.提供外部使用
+     * @return
+     */
+    public static SingletonHunger getInstance() {
+        return instance;
+    }
+}
+
+```
+
+
+1.3.2 懒汉模式（双重检测）
+```java
+/**
+ * 单例模式 双重检测 （因为JVM本身重排序的原因，可能会出现多次的初始化）懒汉模式：类初始化时，不会初始化该对象，真正需要使用的时候才会去创建该对象，具备懒加载功能。
+ */
+public class SingletonLazyOne {
+    /**
+     * 1.将默认构造函数私有化
+     */
+    private SingletonLazyOne(){}
+
+    /**
+     * 2.创建类的唯一私有实例。  volatile 修饰的成员变量可以确保多个线程都能够正确处理
+     */
+    private static volatile SingletonLazyOne instance;
+
+    /**
+     * 3.提供外部使用，当需要获得该类的实例，判断是否已存在，若无则进行创建该实例。
+     * 当然代码中使用了锁就会有额外的开销 对性能有一定的影响
+     * @return
+     */
+    public static SingletonLazyOne getInstance(){
+        if (instance==null){
+            synchronized (instance) {
+                if(instance==null){
+                    instance = new SingletonLazyOne();
+                }
+            }
+        }
+        return instance;
+    }
+}
+
+```
+
+
+1.3.3 懒汉模式（静态内部类）
+```java
+/**
+ * 单例模式 静态内部类 懒汉模式：类初始化时，不会初始化该对象，真正需要使用的时候才会去创建该对象，具备懒加载功能。
+ */
+public class SingletonLazyTwo {
+    /**
+     * 1.将默认构造函数私有化
+     */
+    private SingletonLazyTwo(){}
+
+    /**
+     * 2.创建内部类，并且拥有的一个私有外部实例
+     */
+    private  static class SingletonLazy{
+        private static  final SingletonLazyTwo singletonLazyTwo =new SingletonLazyTwo();
+    }
+
+    /**
+     * 3.提供外部使用，当需要获得该类的实例，才去初始化内部类的静态实例（利用jvm初始化类的特性）
+     * 虽然不会创建静态内部类的对象，但是其 Class 对象还是会被加载。
+     * @return
+     */
+    public static SingletonLazyTwo getInstance(){
+        return SingletonLazy.singletonLazyTwo;
+    }
+}
+```
+
+1.3.4 懒汉模式（枚举）
+```java
+/**
+ * 单例模式 枚举 懒汉模式：类初始化时，不会初始化该对象，真正需要使用的时候才会去创建该对象，具备懒加载功能。
+ */
+public class SingletonLazyThree {
+
+    /**
+     * 1.将默认构造函数私有化
+     */
+    private SingletonLazyThree(){}
+
+    /**
+     * 2.创建枚举类  避免反射攻击
+     */
+    private enum SingletonLazy{
+        INSTANCE;
+        private SingletonLazyThree singleton;
+
+        /**
+         * JVM会保证此方法绝对只调用一次
+         */
+        SingletonLazy(){
+            singleton = new SingletonLazyThree();
+        }
+        public SingletonLazyThree getInstance(){
+            return singleton;
+        }
+    }
+
+    /**
+     * .提供外部使用，当需要获得该类的实例
+     * @return
+     */
+    public static SingletonLazyThree getInstance(){
+        return SingletonLazy.INSTANCE.getInstance();
+    }
+}
+
+```
+1.3.5  多例模式
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 多例模式   类似Spring里面的方法，将类名注册，下次从里面直接获取。
+ */
+public class MultiSingleton {
+    private static Map<String, MultiSingleton> map = new HashMap<String, MultiSingleton>();
+
+    /**
+     * 静态代码块 初始化一次
+     */
+    static {
+        MultiSingleton single = new MultiSingleton();
+        map.put(single.getClass().getName(), single);
+    }
+
+    /**
+     * 保护的默认构造子
+     */
+    protected MultiSingleton() {
+    }
+
+    /**
+     * 静态工厂方法,返还此类惟一的实例
+     * @param name
+     * @return
+     */
+    public static MultiSingleton getInstance(String name) {
+        if (name == null) {
+            name = MultiSingleton.class.getName();
+        }
+        if (map.get(name) == null) {
+            try {
+                map.put(name, (MultiSingleton) Class.forName(name).newInstance());
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        return map.get(name);
+    }
+}
+
+```
+
+
+
 2.工厂模式
+2.1 工厂方法模式
+2.1.1 定义及相关定义对比
+![工厂方法模式](https://img-blog.csdnimg.cn/20190930104732245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+2.1.2 UML类图
+![工厂方法UML类图](https://img-blog.csdnimg.cn/20190930104815340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+2.1.3 实现
+现在 一家饮料店新开业 开始卖奶茶给顾客。
+2.1.3.1 Drink.java 接口: 负责用什么材料制作
+```java
+/**
+ * 饮料接口
+ */
+public interface Drink {
+     /**
+      * 用什么材料
+      */
+     void withMaterial();
+}
+
+```
+2.1.3.2 MilkTea.java 奶茶: 实现饮料的接口
+```java
+/**
+ * 奶茶
+ */
+public class MilkTea implements Drink{
+    @Override
+    public void withMaterial() {
+        System.out.println("混合珍珠奶茶");
+    }
+}
+
+```
+
+2.1.3.3 DrinkFactory.java 接口: 负责制作材料
+```java
+/**
+ * 饮料工厂
+ */
+public interface DrinkFactory {
+    /**
+     * 制作饮料
+     * @return
+     */
+    Drink produceDrink();
+}
+
+```
+
+2.1.3.4 DrinkFactory.java 接口: 负责制作什么材料
+```java
+/**
+ * 饮料工厂
+ */
+public interface DrinkFactory {
+    /**
+     * 制作饮料
+     * @return
+     */
+    Drink produceDrink();
+}
+
+```
+
+
+2.1.3.4 ConcreteDrinkFactory.java 奶茶工厂: 负责制作奶茶
+```java
+/**
+ * 饮料工厂实现
+ */
+public class ConcreteDrinkFactory implements DrinkFactory {
+    @Override
+    public Drink produceDrink() {
+        return new MilkTea();
+    }
+}
+
+```
+
+2.1.3.5  这家店  卖奶茶
+```java
+  //卖饮料的 只推出奶茶等
+        DrinkFactory concreteDrinkFactory = new ConcreteDrinkFactory();
+        Drink drink = concreteDrinkFactory.produceDrink();
+        drink.withMaterial();
+```
+
+
+
+2.2 抽象工厂模式
+2.2.1 定义及相关定义对比
+![抽象工厂模式](https://img-blog.csdnimg.cn/20190930111426893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+2.2.2 UML类图
+![抽象工厂UML类图](https://img-blog.csdnimg.cn/20190930111441842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+
+2.2.3 实现
+现在 一家西式糕点店新开业 开始既卖奶茶又卖甜点给顾客。
+2.2.3.1 Drink.java MilkTea.java  DrinkFactory.java  ConcreteDrinkFactory.java 饮料参考工厂方法代码
+
+2.2.3.2 Dessert.java 接口： 负责用什么麦制作
+```java
+/**
+ * 甜点
+ */
+public interface Dessert {
+    /**
+     * 用什么麦
+     */
+    void withFlour();
+}
+
+```
+
+2.2.3.3 MiniCake.java 小蛋糕： 负责用小麦制作
+```java
+/**
+ * 小蛋糕
+ */
+public class MiniCake implements Dessert {
+    @Override
+    public void withFlour() {
+        System.out.println("小麦蛋糕甜点");
+    }
+}
+
+```
+
+2.2.3.4 WesternFactory.java 接口： 生成不同系列的产品（奶茶 ，蛋糕）
+```java
+/**
+ * 西餐厅工厂接口
+ */
+public interface WesternFactory {
+    /**
+     * 制作甜点
+     * @return
+     */
+    Dessert produceDessert();
+
+    /**
+     * 制作饮料
+     * @return
+     */
+    Drink produceDrink();
+}
+```
+
+2.2.3.5 ConcreteWesternFactory.java 西餐厅： 提供领料 蛋糕
+```java
+/**
+ * 西餐厅实现
+ */
+public class ConcreteWesternFactory implements WesternFactory {
+    @Override
+    public Dessert produceDessert() {
+        return new MiniCake();
+    }
+
+    @Override
+    public Drink produceDrink() {
+        return new MilkTea();
+    }
+}
+
+```
+
+
+2.2.3.6 西餐厅店 推出甜点 跟 饮料
+```java
+      //西餐厅店 推出甜点 跟 饮料。
+        WesternFactory concreteWesternFactory = new ConcreteWesternFactory();
+        Drink drink1 = concreteWesternFactory.produceDrink();
+        Dessert dessert = concreteWesternFactory.produceDessert();
+        drink1.withMaterial();
+        dessert.withFlour();
+```
+
+
 3.原型模式
+3.1 定义及相关定义对比
+![原型模式](https://img-blog.csdnimg.cn/20190930115524151.png)
+
+3.2 UML类图
+![原型UML类图](https://img-blog.csdnimg.cn/20190930115546558.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+3.3 实现
+3.3.1 浅克隆
+（Object类的clone方法只会拷贝对象中的基本的数据类型，对于数组、容器对象、引用对象等都不会拷贝）
+ShallowClone.java
+```java
+import java.util.List;
+
+/**
+ * 浅克隆 ：Object类的clone方法只会拷贝对象中的基本的数据类型，对于数组、容器对象、引用对象等都不会拷贝
+ */
+public class ShallowClone implements Cloneable{
+    private String name;
+    private int num;
+    private List children;
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public List getChildren() {
+        return children;
+    }
+
+    public void setChildren(List children) {
+        this.children = children;
+    }
+}
+
+```
+3.3.2 深克隆
+（必须将原型模式中的数组、容器对象、引用对象等另行拷贝）
+```java
+/**
+ * 深克隆：将原型模式中的数组、容器对象、引用对象等另行拷贝  使用序列化拷贝
+ */
+public class DeepClone implements Serializable {
+    private String name;
+    private int num;
+    private ArrayList children;
+
+    public Object deepClone() throws IOException, ClassNotFoundException {
+        //将对象写入流中
+        ByteArrayOutputStream baos=new ByteArrayOutputStream();
+        ObjectOutputStream oos=new ObjectOutputStream(baos);
+        oos.writeObject(this);
+
+        //将对象从流中取出
+        ByteArrayInputStream bis=new ByteArrayInputStream(baos.toByteArray());
+        ObjectInputStream ois=new ObjectInputStream(bis);
+
+        return(ois.readObject());
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public ArrayList getChildren() {
+        return children;
+    }
+
+    public void setChildren(ArrayList children) {
+        this.children = children;
+    }
+}
+
+```
+
+3.3.3 测试
+```java
+    ShallowClone shallowClone = new ShallowClone();
+        shallowClone.setNum(10);
+        shallowClone.setName("克隆1号");
+        shallowClone.setChildren(Arrays.asList("部件1", "部件2", "部件3"));
+
+        ShallowClone shallowClone1 = null;
+        try {
+            shallowClone1 = (ShallowClone) shallowClone.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        //通过克隆创建了新对象 所以false
+        System.out.println(shallowClone.equals(shallowClone1));
+        //但是对象内容的地址引用都是同一个地址 所以都是true
+        System.out.println(shallowClone.getName()==(shallowClone1.getName()));
+        System.out.println(shallowClone.getChildren()==(shallowClone1.getChildren()));
+
+
+        System.out.println("--------------深克隆------------------");
+        DeepClone deepClone = new DeepClone();
+        deepClone.setName("克隆2号");
+        deepClone.setNum(12);
+        deepClone.setChildren(new ArrayList(){{add("部件1"); add("部件2");add("部件3");}});
+
+        try {
+            DeepClone deepClone1 = (DeepClone) deepClone.deepClone();
+            System.out.println(deepClone.getName()==(deepClone1.getName()));
+            System.out.println(deepClone.getChildren()==(deepClone1.getChildren()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+```
+
+
 4.建造者模式
+4.1 定义及相关定义对比
+![建造者模式](https://img-blog.csdnimg.cn/20190930142138309.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+4.2 UML类图
+![建造者UML类图](https://img-blog.csdnimg.cn/20190930141447493.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbG9uZ2h1YW5nMTU3NDA1,size_16,color_FFFFFF,t_70)
+
+4.3 实现
+一桶方便面的制作，包含调味包，面块，叉子。
+
+4.3.1 InstantNoodles.java  方便面：由叉子 面块 调味包组成
+```java
+/**
+ * 方便面
+ */
+public class InstantNoodles {
+    /**
+     * 调味包
+     */
+    private String seasoningPacket;
+
+    /**
+     * 面块
+     */
+    private String noodles;
+
+    /**
+     * 叉子
+     */
+    private String fork;
+
+    public String getSeasoningPacket() {
+        return seasoningPacket;
+    }
+
+    public void setSeasoningPacket(String seasoningPacket) {
+        this.seasoningPacket = seasoningPacket;
+    }
+
+    public String getNoodles() {
+        return noodles;
+    }
+
+    public void setNoodles(String noodles) {
+        this.noodles = noodles;
+    }
+
+    public String getFork() {
+        return fork;
+    }
+
+    public void setFork(String fork) {
+        this.fork = fork;
+    }
+}
+
+```
+
+4.3.2 Builder.java 接口:方便面制造步骤
+```java
+/**
+ * 方便面制造接口
+ */
+public interface Builder {
+
+    /**
+     * 制造调味包
+     */
+    void buildSeasoningPacket();
+
+    /**
+     * 制造面块
+     */
+    void buildNoodles();
+
+    /**
+     * 制造叉子
+     */
+    void buildFork();
+
+    /**
+     * 获得方便面
+     * @return
+     */
+    InstantNoodles getInstantNoodles();
+}
+
+```
+
+
+4.3.3 BuilderDirector.java 生成方便面:方便面制造步骤组装
+```java
+/**
+ * 导演者
+ */
+public class BuilderDirector {
+    /**
+     * 抽象建造者
+     */
+    private Builder builder;
+
+    public Builder getBuilder() {
+        return builder;
+    }
+
+    public void setBuilder(Builder builder) {
+        this.builder = builder;
+    }
+
+    /**
+     * 返回方便面
+     * @return
+     */
+    public InstantNoodles getInstantNoodles(){
+        builder.buildSeasoningPacket();
+        builder.buildNoodles();
+        builder.buildFork();
+        return builder.getInstantNoodles();
+    }
+}
+
+```
+
+
+4.3.4 SeafoodInstantNoodlesBuilder.java 海鲜方便面:实现方便面制造步骤
+```java
+/**
+ * 海鲜方便面
+ */
+public class SeafoodInstantNoodlesBuilder implements Builder{
+
+    private InstantNoodles instantNoodles =new InstantNoodles();
+
+    @Override
+    public void buildSeasoningPacket() {
+        instantNoodles.setSeasoningPacket("海鲜调味包");
+    }
+
+    @Override
+    public void buildNoodles() {
+        instantNoodles.setNoodles("小块面");
+    }
+
+    @Override
+    public void buildFork() {
+        instantNoodles.setFork("塑料叉");
+    }
+
+    @Override
+    public InstantNoodles getInstantNoodles() {
+        return instantNoodles;
+    }
+}
+
+```
+
+
+4.3.5 SpicyInstantNoodlesBuilder.java 麻辣方便面:实现方便面制造步骤
+```java
+/**
+ * 麻辣方便面
+ */
+public class SpicyInstantNoodlesBuilder implements Builder{
+
+    private InstantNoodles instantNoodles = new InstantNoodles();
+
+    @Override
+    public void buildSeasoningPacket() {
+        instantNoodles.setSeasoningPacket("麻辣调味包");
+    }
+
+    @Override
+    public void buildNoodles() {
+        instantNoodles.setNoodles("大块面");
+    }
+
+    @Override
+    public void buildFork() {
+        instantNoodles.setFork("塑料叉");
+    }
+
+    @Override
+    public InstantNoodles getInstantNoodles() {
+        return instantNoodles;
+    }
+}
+
+```
+
+
+
+4.3.6 测试
+```java
+        BuilderDirector builderDirector = new BuilderDirector();
+        builderDirector.setBuilder(new SeafoodInstantNoodlesBuilder());
+        InstantNoodles instantNoodles = builderDirector.getInstantNoodles();
+        System.out.println(instantNoodles.getSeasoningPacket());
+
+        builderDirector.setBuilder(new SpicyInstantNoodlesBuilder());
+        instantNoodles = builderDirector.getInstantNoodles();
+        System.out.println(instantNoodles.getSeasoningPacket());
+```
+
 
 ### 二、结构型
 
